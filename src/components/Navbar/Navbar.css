@@ -1,0 +1,30 @@
+.navbar {
+    @apply sticky top-0 flex justify-center w-full p-2;
+}
+
+.navbar .link-wrapper {
+    @apply flex justify-center py-1 px-6 rounded-full bg-slate-300;
+}
+
+.navbar ul {
+    @apply flex justify-center gap-3 flex-1;
+}
+
+.navbar li {
+    @apply flex-1;
+}
+
+/* TODO: make 'a' all the same width. */
+
+.navbar a {
+    @apply transition-all block text-sm text-slate-700;
+
+    .icon {
+        
+        @apply transition-all flex justify-center rounded-full p-1;
+    }
+
+    &.active-link .icon {
+        @apply bg-slate-800 text-white;
+    }
+}
